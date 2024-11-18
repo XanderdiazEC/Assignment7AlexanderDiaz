@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact List Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+            line-height: 1.6;
+        }
+        
+        .instructions {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        
+        .button-group {
+            margin: 20px 0;
+            display: flex;
+            gap: 10px;
+        }
+        
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+        
+        code {
+            background-color: #e0e0e0;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+    </style>
+    <!-- Add the script in the head with defer attribute -->
+    <script defer src="contactlist.js" type="text/javascript"></script>
+</head>
+<body>
+    <h1>Contact List Management System</h1>
+    
+    <div class="instructions">
+        <h2>Instructions:</h2>
+        <p>To view the contact list and operations:</p>
+        <ol>
+            <li>Right-click anywhere on this page</li>
+            <li>Select "Inspect" or press <code>F12</code></li>
+            <li>Navigate to the "Console" tab</li>
+            <li>Use the buttons below to perform operations</li>
+        </ol>
+    </div>
+
+    <div class="button-group">
+        <button onclick="addNewContact()">Add New Contact</button>
+        <button onclick="showFirstAndLast()">Show First and Last Contacts</button>
+    </div>
+
+    <p>Available operations:</p>
+    <ul>
+        <li>Displaying the initial contact list</li>
+        <li>Adding a new contact (using the button)</li>
+        <li>Showing the first and last contacts (using the button)</li>
+    </ul>
+</body>
+</html>
